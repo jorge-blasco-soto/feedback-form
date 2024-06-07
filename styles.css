@@ -235,3 +235,16 @@ textarea:focus {
 .info-button:hover .info-box {
     display: block;
 }
+
+@media (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    body {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+    /* Example: Adjust form input width */
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        width: 100%; /* Make inputs full width */
+    }
+}
