@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Feedback!</h1>
+    </header>
+    <main>
+        <section id="thank-you-message">
+            <p>Your feedback has been received and will help me on my quest for excellence.</p>
+            <p>I appreciate your time and effort in providing this valuable feedback.</p>
+            <p id="total-xp-message"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <p><a href="feedback.html" class="back-link">Back to feedback-form</a></p>
+        </div>
+    </footer>
+    <script>
+        // Function to get query parameter
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the total XP from URL
+        const totalXP = parseInt(getQueryParam('totalXP'));
+
+        // Determine Jorge's status based on total XP
+        let status;
+        if (totalXP < 16) {
+            status = "I am but a humble apprentice on my journey to greatness.";
+        } else if (totalXP < 31) {
+            status = "My skills are growing, but there is still much to learn.";
+        } else if (totalXP < 46) {
+            status = "I am becoming quite proficient in your craft!";
+        } else if (totalXP < 61) {
+            status = "I have proven myself to be a skilled artisan. Others look to me for guidance.";
+        } else {
+            status = "Well it seems like I deserve to level up! I am a master of my trade, wielding my knowledge with expertise and finesse.";
+        }
+
+        // Display the total XP message
+        document.getElementById('total-xp-message').textContent = `Total XP is: ${totalXP}. ${status}`;
+    </script>
+</body>
+</html>

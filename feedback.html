@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge's Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jorge the Data Artificer's Feedback Adventure</h1>
+    </header>
+    <main>
+        <section id="scoring-system">
+            <h2>Some words of Wisdom</h2>
+            <p>In the mystical land of APEX, where spreadsheets rule and data flows like 
+                mead in a tavern, there exists a valiant yet humble JL3 Data Engineer known 
+                as Jorge, the Data Artificer.<br>Now, Jorge isn't just any ordinary data wrangler.
+                Oh no, he's embarked on the noble quest of transforming raw, 
+                chaotic data into pure, sparkling insights. A task so grand, 
+                so heroic, it’s almost as if he’s trying to turn lead into gold.
+                But every hero needs their band of companions.<br>Enter you, the 
+                seasoned adventurer, armed not with swords or spells, 
+                but with something far more powerful... feedback!.<br>Yes, because in 
+                this land, no artifact, no matter how polished, is complete without 
+                the sage advice of its allies. And let’s be honest, who doesn’t love a 
+                good critique session?<br>Your mission, should you choose to accept it 
+                (and really, what choice do you have?), is to bestow upon 
+                Jorge the attributes that will guide him on his path to become a even better
+                artifacter/engineer.<br>
+                As you embark on this journey, remember, your feedback is not just a series of 
+                numbers. It’s a lifeline, a beacon of hope. Or, you know, just a way to 
+                make sure Jorge doesn’t mess up too badly. So, go ahead, rate wisely, 
+                comment generously, and let's turn this data adventure into a legendary saga. 
+                Or at least into a somewhat coherent project.<br>
+                Are you ready to embark on this adventure? Jorge's success – 
+                and possibly his sanity – depends on you. No pressure.</p>
+            <h2>Scoring System</h2>
+            <p>Lets start by understanding the scoring system. The d20 will become a 5 one today, which will mean:</p>
+            <ul>
+                <li><strong>1 - (Feeble):</strong> Like a goblin with a dull dagger, I struggle to make an impact and need significant improvement.</li>
+                <li><strong>2 - (Mediocre):</strong> Similar to a wandering orc, my performance falls below expectations.</li>
+                <li><strong>3 - (Adept):</strong> Much like a seasoned adventurer, I meets expectations with proficiency.</li>
+                <li><strong>4 - (Exemplary):</strong> Comparable to a mighty dragon, my performance exceeds expectations.</li>
+                <li><strong>5 - (Legendary):</strong> Like an ancient wizard mastering the arcane, my performance is truly outstanding, setting a standard for all.</li>
+            </ul>
+        </section>
+        <section id="feedback-form">
+            <h2>Feedback Form</h2>
+            <form id="form">
+                <div class="input-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name-input" name="name" required>
+                </div>
+                    <label for="charisma">
+                        <strong>Charisma (CHA):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                Charisma reflects my ability to communicate effectively and charm others. 
+                                High charisma means better interpersonal skills and team collaboration.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="charisma-input" name="charisma" min="1" max="5" required>
+                    <textarea id="charisma-comments" name="charisma-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="intelligence">
+                        <strong>Intelligence (INT):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                Intelligence reflects my problem-solving skills, technical knowledge, 
+                                and ability to understand complex concepts. 
+                                High intelligence means better data analysis and coding skills.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="intelligence-input" name="intelligence" min="1" max="5" required>
+                    <textarea id="intelligence-comments" name="intelligence-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="wisdom">
+                        <strong>Wisdom (WIS):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                Wisdom is my ability to understand the product, 
+                                customer needs, and business goals, and how they relate to my work. 
+                                High insight means having a deep comprehension of how data 
+                                impacts the broader objectives and making informed decisions 
+                                that align with these goals.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="wisdom-input" name="wisdom" min="1" max="5" required>
+                    <textarea id="wisdom-comments" name="wisdom-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="dexterity">
+                        <strong>Dexterity (DEX):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                This attribute measures my agility, flexibility, and efficiency 
+                                in performing tasks. High dexterity means being able to adapt 
+                                quickly and handle multiple tasks effectively.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="dexterity-input" name="dexterity" min="1" max="5" required>
+                    <textarea id="dexterity-comments" name="dexterity-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="strength">
+                        <strong>Strength (STR):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                Strength reflects my resilience, ability to handle stress, 
+                                and overall endurance. High strength means better performance 
+                                under pressure and a strong work ethic.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="strength-input" name="strength" min="1" max="5" required>
+                    <textarea id="strength-comments" name="strength-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="creativity">
+                        <strong>Creativity (CRT):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                Creativity measures my ability to come up with innovative solutions 
+                                and creative ideas. High creativity means bringing fresh 
+                                perspectives and unique solutions to the team.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="creativity-input" name="creativity" min="1" max="5" required>
+                    <textarea id="creativity-comments" name="creativity-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="collaboration">
+                        <strong>Collaboration (COL):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                This attribute measures my ability to work effectively with others, 
+                                share knowledge, and contribute to the team's success. 
+                                High collaboration means being a reliable team member who 
+                                fosters a cooperative and productive work environment.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="collaboration-input" name="collaboration" min="1" max="5" required>
+                    <textarea id="collaboration-comments" name="collaboration-comments" class="attribute-input" placeholder="Comments"></textarea>
+                    <label for="accountability">
+                        <strong>Accountability (ACC):</strong>
+                        <button type="button" class="info-button">i
+                            <div class="info-box">
+                                This attribute reflects my ability to take responsibility 
+                                for my actions, meet deadlines, and follow through on commitments. 
+                                High accountability means being dependable and trustworthy.
+                            </div>
+                        </button>
+                    </label>
+                    <input type="number" id="accountability-input" name="accountability" min="1" max="5" required>
+                    <textarea id="accountability-comments" name="accountability-comments" class="attribute-input" placeholder="Comments"></textarea>
+                <div class="button-container">
+                    <button type="submit">Submit Feedback</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <p><a href="index.html" class="back-link">Back to homepage</a></p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
